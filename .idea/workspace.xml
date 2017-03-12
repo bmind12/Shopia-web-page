@@ -26,8 +26,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="799">
-                  <caret line="220" column="10" lean-forward="false" selection-start-line="220" selection-start-column="10" selection-end-line="220" selection-end-column="10" />
+                <state relative-caret-position="421">
+                  <caret line="193" column="42" lean-forward="false" selection-start-line="193" selection-start-column="42" selection-end-line="193" selection-end-column="42" />
                   <folding />
                 </state>
               </provider>
@@ -40,8 +40,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="446">
-                  <caret line="95" column="33" lean-forward="false" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+                <state relative-caret-position="417">
+                  <caret line="520" column="2" lean-forward="false" selection-start-line="520" selection-start-column="2" selection-end-line="520" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
@@ -62,6 +62,16 @@
     <findStrings>
       <find>social</find>
       <find>featu</find>
+      <find>margin-right: 20px;</find>
+      <find>container</find>
+      <find>in-coll</find>
+      <find>Playfair</find>
+      <find>Lato</find>
+      <find>#d9bf8f</find>
+      <find>footer-bottom</find>
+      <find>Back on top</find>
+      <find>back-on-top</find>
+      <find>-social a</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,8 +80,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -82,7 +92,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1201" />
+    <option name="width" value="1197" />
     <option name="height" value="1160" />
   </component>
   <component name="ProjectView">
@@ -211,15 +221,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489156001173</updated>
-      <workItem from="1489156004636" duration="11156000" />
+      <workItem from="1489156004636" duration="27964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11156000" />
+    <option name="totallyTimeSpent" value="27964000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1201" height="1160" extended-state="0" />
+    <frame x="0" y="0" width="1197" height="1160" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1927966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -251,18 +261,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="95" column="33" lean-forward="false" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+        <state relative-caret-position="421">
+          <caret line="193" column="42" lean-forward="false" selection-start-line="193" selection-start-column="42" selection-end-line="193" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="220" column="10" lean-forward="false" selection-start-line="220" selection-start-column="10" selection-end-line="220" selection-end-column="10" />
+        <state relative-caret-position="417">
+          <caret line="520" column="2" lean-forward="false" selection-start-line="520" selection-start-column="2" selection-end-line="520" selection-end-column="2" />
           <folding />
         </state>
       </provider>
