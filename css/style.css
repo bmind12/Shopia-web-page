@@ -122,6 +122,7 @@ html {
 .header-user-panel li {
   display: inline-block;
   padding: 0 20px;
+  vertical-align: top;
 }
 
 .header-user-panel li:last-child {
@@ -152,6 +153,7 @@ html {
 
 .header-bottom li {
   display: inline-block;
+  vertical-align: top;
 }
 
 .header-bottom a {
@@ -213,6 +215,7 @@ html {
   display: inline-block;
   width: 34px;
   height: 34px;
+  vertical-align: top;
 
   font-size: 0;
 }
@@ -321,7 +324,7 @@ html {
 
 .offer-btn {
   position: absolute;
-  top: 60%;
+  top: 63%;
   left: 50%;
   transform: translate(-50%, 0);
 
@@ -360,6 +363,112 @@ html {
   list-style: none;
 }
 
+.features-list li {
+  position: relative;
+
+  min-height: 100px;
+  padding: 25px;
+}
+
+.features-list li:first-child,
+.features-list li:last-child {
+  width: 390px;
+  padding-left: 100px;
+}
+
+.features-list li:nth-child(2) {
+  width: 370px;
+  padding-left: 80px;
+}
+
+.features-list li:first-child::after {
+  position: absolute;
+  top: 0;
+  right: -39px;
+
+  border-style: solid;
+  border-width: 55px 39px 55px 39px;
+  border-color: transparent #d9bf8f transparent #d9bf8f;
+  border-right: none;
+
+  content: "";
+}
+
+.features-list li:first-child strong::before {
+  position: absolute;
+  top: 37px;
+  left: 32px;
+
+  width: 38px;
+  height: 38px;
+
+  content: "";
+  background: url("../img/plane.png");
+}
+
+.features-list li:last-child::before {
+  position: absolute;
+  top: 0;
+  left: -39px;
+
+  border-style: solid;
+  border-width: 55px 39px 55px 39px;
+  border-color: transparent #d9bf8f transparent #d9bf8f;
+  border-left: none;
+
+  content: "";
+}
+
+.features-list li:last-child strong::before {
+  position: absolute;
+  top: 31px;
+  left: 25px;
+
+  width: 48px;
+  height: 49px;
+
+  content: "";
+  background: url("../img/support.png");
+}
+
+.features-list li:nth-child(2)::before {
+  position: absolute;
+  top: 0;
+  left: -39px;
+
+  border-style: solid;
+  border-width: 55px 39px 55px 39px;
+  border-color: #000000 transparent #000000 transparent;
+  border-right: none;
+
+  content: "";
+}
+
+.features-list li:nth-child(2)::after {
+  position: absolute;
+  top: 0;
+  right: -39px;
+
+  border-style: solid;
+  border-width: 55px 39px 55px 39px;
+  border-color: #000000 transparent #000000 transparent;
+  border-left: none;
+
+  content: "";
+}
+
+.features-list li:nth-child(2) strong::before {
+  position: absolute;
+  top: 33px;
+  left: 25px;
+
+  width: 41px;
+  height: 42px;
+
+  content: "";
+  background: url("../img/clock.png");
+}
+
 .features-list strong {
   display: block;
 
@@ -377,11 +486,6 @@ html {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-}
-
-.features-list li {
-  min-height: 100px;
-  padding: 25px 0;
 }
 
 .features-list li:first-child,
@@ -482,11 +586,15 @@ html {
   margin-bottom: 155px;
 }
 
-.brand-wrapper {
+.brand-list {
   margin-top: 140px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
 }
 
 /*CLIENTS*/
@@ -618,6 +726,7 @@ html {
   display: inline-block;
   width: 50px;
   height: 50px;
+  vertical-align: top;
 
   background-color: #ffffff;
   border-radius: 50%;
@@ -777,6 +886,7 @@ html {
   display: inline-block;
   width: 20px;
   height: 6px;
+  vertical-align: top;
 }
 
 .payment-systems a {
