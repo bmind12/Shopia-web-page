@@ -364,12 +364,33 @@ html {
 .slider {
   position: relative;
 
+  width: 1290px;
   height: 692px;
   margin-bottom: 66px;
 
-  background: #7f7a75 url("../img/slider.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+
+  text-align: center;
+
+  transition: 0.5s;
+}
+
+.slide img {
+  position: relative;
+  left: 100%;
+
+  margin-left: -200%;
+}
+
+#btn-slide-1:checked ~ .slide-1,
+#btn-slide-2:checked ~ .slide-2,
+#btn-slide-3:checked ~ .slide-3,
+#btn-slide-4:checked ~ .slide-4  {
+  display: block;
 }
 
 .slider input {
@@ -499,6 +520,43 @@ html {
   line-height: 1.4em;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.slider-toggles {
+  position: absolute;
+  left: 47%;
+  bottom: 6%;
+
+  width: 91px;
+  display: flex;
+  justify-content: space-around;
+
+  z-index: 1;
+}
+
+.toggle {
+  font-size: 0;
+
+  display: inline-block;
+
+  width: 13px;
+  height: 13px;
+
+  content: "";
+  cursor: pointer;
+  vertical-align: baseline;
+
+  background-color: #b2b2b2;
+  transform: rotate(45deg);
+}
+
+#btn-slide-1:checked ~ .slider-toggles .toggle[for='btn-slide-1'],
+#btn-slide-2:checked ~ .slider-toggles .toggle[for='btn-slide-2'],
+#btn-slide-3:checked ~ .slider-toggles .toggle[for='btn-slide-3'],
+#btn-slide-4:checked ~ .slider-toggles .toggle[for='btn-slide-4'] {
+  background-color: #000000;
+
+  transition: 0.2s;
 }
 
 /*FEATURES*/
@@ -724,6 +782,40 @@ html {
   content: "";
 }
 
+.shop-btn {
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  width: 109px;
+  height: 42px;
+  padding: 6px;
+
+  color: #ffffff;
+  font-family: "Lato", Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 29px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  content: "Shop now";
+  background-color: #f0975c;
+  z-index: 1;
+}
+
+.shop-btn:hover {
+  background-color: #bf7858;
+}
+
+.shop-btn:active {
+  background-color: #9c6543;
+
+  transition: 0.1s;
+}
+
 /*SUB COLLECTION*/
 
 .sub-collection {
@@ -767,10 +859,6 @@ html {
   text-decoration: none;
 }
 
-.sub-collection-item-cart:hover {
-  background-color: #9c6543;
-}
-
 .sub-collection-item-cart {
   position: absolute;
   bottom: 0;
@@ -790,27 +878,31 @@ html {
 }
 
 .sub-collection-item-cart::before {
-position: absolute;
-top: 0;
-left: -39px;
+  position: absolute;
+  top: 0;
+  left: -39px;
 
-border-style: solid;
-border-width: 0 0 44px 40px;
-border-color:  transparent transparent #000000 transparent;
+  border-style: solid;
+  border-width: 0 0 44px 40px;
+  border-color:  transparent transparent #000000 transparent;
 
-content: "";
+  content: "";
+
+  transition: 0.3s;
 }
 
 .sub-collection-item-cart::after {
-position: absolute;
-top: 0;
-right: -39px;
+  position: absolute;
+  top: 0;
+  right: -39px;
 
-border-style: solid;
-border-width: 44px 0 0 40px;
-border-color: transparent transparent transparent #000000;
+  border-style: solid;
+  border-width: 44px 0 0 40px;
+  border-color: transparent transparent transparent #000000;
 
-content: "";
+  content: "";
+
+  transition: 0.3s;
 }
 
 .sub-collection-item:nth-child(4n+1) .sub-collection-item-cart::before {
@@ -819,6 +911,36 @@ content: "";
 
 .sub-collection-item:nth-child(4n+1) .sub-collection-item-cart::after {
   border-color: transparent transparent transparent #f0975c;
+}
+
+.sub-collection-item .sub-collection-item-cart:hover {
+  background-color: #bf7858;
+}
+
+.sub-collection-item .sub-collection-item-cart:hover::before {
+  border-color:  transparent transparent #bf7858 transparent;
+}
+
+.sub-collection-item .sub-collection-item-cart:hover::after {
+  border-color:  transparent transparent transparent #bf7858;
+}
+
+.sub-collection-item .sub-collection-item-cart:active {
+  background-color: #9c6543;
+
+  transition: 0.1s;
+}
+
+.sub-collection-item .sub-collection-item-cart:active::before {
+  border-color:  transparent transparent #9c6543 transparent;
+
+  transition: 0.1s;
+}
+
+.sub-collection-item .sub-collection-item-cart:active::after {
+  border-color:  transparent transparent transparent #9c6543;
+
+  transition: 0.1s;
 }
 
 /*BRAND*/
